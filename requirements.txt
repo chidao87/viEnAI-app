@@ -1,0 +1,7 @@
+streamlit
+hydralit-components
+streamlit-modal
+streamlit-lottie
+transformers
+spacy
+nltk
