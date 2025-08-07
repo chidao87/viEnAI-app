@@ -13,14 +13,6 @@ from PIL import Image
 # Set up page configuration
 st.set_page_config(page_title="ViEng AI", page_icon="logo.png", initial_sidebar_state="expanded")
 
-# Display tab options
-chosen_tab = st.radio(
-    "Choose a section:",
-    ['🏠 Home', '🌐 Translate', '🔍 Analyze'],
-    index=0,
-    horizontal=True
-)
-
 
 # Footer style and content
 footer_style = """
@@ -39,7 +31,7 @@ if "loading_done" not in st.session_state:
     st.session_state.loading_done = False
 
 if not st.session_state.loading_done:
-    st.image("logo.gif", caption="Loading...", use_column_width=True)  # Add your GIF path
+    st.image("logo.gif", caption="Loading...", use_container_width=True)  # Add your GIF path
     time.sleep(3)
     st.session_state.loading_done = True
     st.rerun()
@@ -84,7 +76,7 @@ over_theme = {'txc_inactive': 'white', 'menu_background': '#F5B7B1', 'txc_active
 # Set up the main app layout with the NavBar options
 chosen_tab = st.radio(
     "Choose a section:",
-    [HOME, TRANSLATE, ANALYZE],
+    ['🏠 Home', '🌐 Translate', '🔍 Analyze'],
     index=0,
     horizontal=True
 )
