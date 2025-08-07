@@ -73,12 +73,13 @@ option_data = [
 over_theme = {'txc_inactive': 'white', 'menu_background': '#F5B7B1', 'txc_active': 'white', 'option_active': '#CD5C5C'}
 
 # Set up the main app layout with the NavBar options
-chosen_tab = hc.option_bar(
-    option_definition=option_data,
-    key='PrimaryOptionx',
-    override_theme=over_theme,
-    horizontal_orientation=True
+chosen_tab = st.radio(
+    "Choose a section:",
+    [HOME, TRANSLATE, ANALYZE],
+    index=0,
+    horizontal=True
 )
+
 # Define functions for each page
 
 # Home Page
