@@ -76,7 +76,7 @@ over_theme = {'txc_inactive': 'white', 'menu_background': '#F5B7B1', 'txc_active
 # Set up the main app layout with the NavBar options
 chosen_tab = st.radio(
     "Choose a section:",
-    ['🏠 Home', '🌐 Translate', '🔍 Analyze'],
+    [HOME, TRANSLATE, ANALYZE],
     index=0,
     horizontal=True
 )
