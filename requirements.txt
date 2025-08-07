@@ -1,6 +1,7 @@
 streamlit
-streamlit-modal
-streamlit-lottie
-transformers
-spacy
-nltk
+openai
+pandas
+numpy==1.24.4
+Pillow
+transformers==4.41.2
+sentencepiece==0.1.99
