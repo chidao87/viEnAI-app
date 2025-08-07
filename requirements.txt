@@ -1,7 +1,14 @@
+# UI + Core
 streamlit
-openai
-pandas
-numpy==1.24.4
-Pillow
+streamlit-modal
+streamlit-lottie
+
+# NLP & Transformers
 transformers==4.30.2
 sentencepiece==0.1.96
+spacy==3.7.2
+nltk
+openai
+
+# Numeric + Data
+numpy==1.24.4
