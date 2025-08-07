@@ -34,7 +34,7 @@ if not st.session_state.loading_done:
     st.image("logo.gif", caption="Loading...", use_column_width=True)  # Add your GIF path
     time.sleep(3)
     st.session_state.loading_done = True
-    st.experimental_rerun()
+    st.rerun()
 
 # Layout adjustments
 max_width_str = f"max-width: {75}%;"
