@@ -13,6 +13,42 @@ from PIL import Image
 # Set up page configuration
 st.set_page_config(page_title="ViEng AI", page_icon="logo.png", initial_sidebar_state="expanded")
 
+# Custom CSS for styling
+st.markdown("""
+<style>
+div[data-baseweb="radio"] > div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #f4cccc;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+div[data-baseweb="radio"] label {
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    color: #333;
+    font-weight: bold;
+}
+div[data-baseweb="radio"] input:checked + div {
+    background-color: #c0504d;
+    color: white !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Display tab options
+chosen_tab = st.radio(
+    "Choose a section:",
+    ['🏠 Home', '🌐 Translate', '🔍 Analyze'],
+    index=0,
+    horizontal=True
+)
+
+
 # Footer style and content
 footer_style = """
     <style>
