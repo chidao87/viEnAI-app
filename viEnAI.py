@@ -1,4 +1,3 @@
-import hydralit_components as hc
 import streamlit as st
 from streamlit_modal import Modal
 import streamlit_lottie
